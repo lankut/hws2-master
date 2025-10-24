@@ -20,7 +20,7 @@ export const pureAddUser = (name: string, setError: (ERROR: string) => void, set
 }
 
 export const pureOnBlur = (name: string, setError: (ERROR: string) => void) => { // если имя пустое - показать ошибку
-    if (name.trim()==='') {
+    if (name.trim() === '') {
         setError(ERROR)
     }
 }
@@ -43,6 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value) // need to fix
+        name && setError('')
         error && setError('')
     }
     const addUser = () => {
