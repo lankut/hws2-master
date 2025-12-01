@@ -38,7 +38,6 @@ const HW3 = () => {
     const addUserCallback = (name: UserType['name']) => { // need to fix any
         pureAddUserCallback(name, setUsers, users)
     }
-    console.log(users)
 
     return (
         <div id={'hw3'}>
