@@ -13,6 +13,7 @@ function Clock() {
     const minutes = date.getMinutes()
     const seconds = date.getSeconds()
     const day = date.getDay()
+    const dat = date.getDate()
     const month = date.getMonth()
     const year = date.getFullYear()
 
@@ -23,27 +24,27 @@ function Clock() {
 
     const monthAndWeek: monthAndWeekType = {
         month: {
-            1: 'January',
-            2: 'February',
-            3: 'March',
-            4: 'April',
-            5: 'May',
-            6: 'June',
-            7: 'July',
-            8: 'August',
-            9: 'September',
-            10: 'October',
-            11: 'November',
-            12: 'December',
+            0: 'January',
+            1: 'February',
+            2: 'March',
+            3: 'April',
+            4: 'May',
+            5: 'June',
+            6: 'July',
+            7: 'August',
+            8: 'September',
+            9: 'October',
+            10: 'November',
+            11: 'December',
         },
         week: {
+            0: 'Sunday',
             1: 'Monday',
             2: 'Tuesday',
             3: 'Wednesday',
             4: 'Thursday',
             5: 'Friday',
             6: 'Saturday',
-            7: 'Sunday',
         }
 
     }
@@ -55,7 +56,7 @@ function Clock() {
     }
 
     const time = <span>{`${double(hours)}:${double(minutes)}:${double(seconds)}`} </span>
-    const currentDate = <span>{`${double(day)}.${double(month)}.${year}`} </span>
+    const currentDate = <span>{`${double(dat)}.${double(month + 1)}.${year}`} </span>
 
     const dayString = monthAndWeek.week[day]
     const monthString = monthAndWeek.month[month]
