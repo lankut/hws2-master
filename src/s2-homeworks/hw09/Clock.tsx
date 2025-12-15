@@ -57,7 +57,6 @@ function Clock() {
 
     const time = <span>{`${double(hours)}:${double(minutes)}:${double(seconds)}`}</span>
     const currentDate = <span>{`${double(dat)}.${double(month + 1)}.${year}`}</span>
-    console.log(typeof currentDate)
 
     const dayString = monthAndWeek.week[day]
     const monthString = monthAndWeek.month[month]
