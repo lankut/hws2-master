@@ -19,5 +19,14 @@ html {
 }
 
 .select {
-
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 171px;
+    height: 36px;
+    border: 1px solid #323232;
+    border-radius: 2px;
+    background-color: var(--background);
+    color: var(--color);
 }
