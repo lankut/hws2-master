@@ -50,7 +50,6 @@ const HW15 = () => {
     const [techs, setTechs] = useState<TechType[]>([])
 
 
-
     const sendQuery = (params: any) => {
 
         setLoading(true)
@@ -87,7 +86,7 @@ const HW15 = () => {
         setSort(newSort)
         setPage(1) // при сортировке сбрасывать на 1 страницу
 
-        sendQuery({sort: newSort})
+        sendQuery({page: 1, count: totalCount, sort: newSort})
         setSearchParams({sort: newSort})
 
         //
@@ -112,7 +111,7 @@ const HW15 = () => {
             </div>
         </div>
     ))
-
+    console.log(mappedTechs)
     return (
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Homework #15</div>
