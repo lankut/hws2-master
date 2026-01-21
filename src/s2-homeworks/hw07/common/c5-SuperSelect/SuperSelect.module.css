@@ -1,24 +1,26 @@
 .select {
     /*background-color: red;*/
-    width: 165px;
+    width: 120px;
     height: 24px;
     border: 1px solid #C2C2C2;
     border-radius: 2px;
-    padding-left: 10px;
-    padding-right: 50px;
-    font-family: Montserrat, sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
     appearance: none;
     background-image: url("./chevron-down.svg");
     background-repeat: no-repeat;
     background-position: right 0 center;
+    -webkit-appearance: none;
 }
 
 .select:focus {
-
+    /*background-color: red;*/
+    /*text-align: center;*/
 }
 
 .option:hover {
-
+    /*background-color: red;*/
 }

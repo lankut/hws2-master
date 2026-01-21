@@ -1,5 +1,6 @@
 .tech {
     width: 50vw;
+    /*background-color: red;*/
 }
 
 .developer {
@@ -8,18 +9,29 @@
 
 .techHeader {
     width: 50vw;
+    /*background-color: red;*/
 }
 
 .developerHeader {
-
+    /*background-color: red;*/
 }
 
 .row {
     display: flex;
+    height: 36px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-left: 10px;
+    /*background-color: red;*/
 }
 
 .rowHeader {
     display: flex;
+    padding-left: 10px;
+    height: 36px;
+    font-weight: bold;
+    background-color: #E5E5E5;
+    align-items: center;
+    /*background-color: red;*/
 }
 
 .loading {

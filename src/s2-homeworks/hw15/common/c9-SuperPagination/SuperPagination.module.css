@@ -1,11 +1,22 @@
 .pagination {
     display: flex;
+    /*background-color: red;*/
+    align-items: center;
+    margin-bottom: 36px;
 }
 
 .text1 {
-
+    /*background-color: red;*/
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 16px;
 }
 
 .text2 {
-
+    /*background-color: red;*/
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 16px;
 }
